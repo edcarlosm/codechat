@@ -12,10 +12,10 @@ services:
       dockerfile: Dockerfile
 #    image: codechat/api:latest
     restart: always
-    container_name: codechat
+#    container_name: codechat
     networks:
       kabacorp:
-        ipv4_address: 172.19.0.4
+        ipv4_address: 172.19.0.103
     tty: true
     env_file:
       - ./src/.env
